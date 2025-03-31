@@ -15,7 +15,7 @@ const Home = () => {
             <nav className={styles.nav}>
                 <ul className={`${styles.navLinks} ${styles.navLeft}`}>
                     <li><Link to="/" className={styles.logo}>Diesel</Link></li>
-                    <li><Link to="/about">Sobre Nós</Link></li>
+                    <li><Link to="/sobre">Sobre Nós</Link></li>
                     <li><Link to="/shop">Shop</Link></li>
                     <li><Link to="/contact">Contato</Link></li>
                 </ul>
