@@ -1,0 +1,16 @@
+body::after {
+    position: fixed;
+    content: "";
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    background-color: var(--text-dark);
+    z-index: -1;
+    animation: body-bg 1s ease-in-out forwards;
+  }
+  
+  @keyframes body-bg {
+    0% { width: 0vw; }
+    100% { width: 50vw; }
+  }

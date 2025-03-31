@@ -1,24 +1,24 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { CartIcon, LoginIcon, ProfileIcon } from '../icons';
+import CartIcon from '../icons/CartIcon';
+import LoginIcon from '../icons/LoginIcon';
+import ProfileIcon from '../icons/ProfileIcon'; // Nome correto (sem duplicação)
 
 const NavLinks = () => {
   return (
     <ul className="nav__links nav__right">
       <li>
-        <Link to="/cart">
+        <a href="/cart">
           <CartIcon />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link to="/login">
+        <a href="/login">
           <LoginIcon />
-        </Link>
+        </a>
       </li>
       <li>
-        <Link to="/profile">
-          <ProfileIcon />
-        </Link>
+        <a href="/profile">
+          <ProfileIcon /> {/* Nome consistente com a importação */}
+        </a>
       </li>
     </ul>
   );
