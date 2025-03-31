@@ -1,0 +1,43 @@
+.nav {
+    padding-block: 2rem 0;
+    padding-inline: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .nav__link {
+    font-weight: 500;
+    color: var(--text-dark);
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .nav__link:hover {
+    color: var(--primary-color);
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    text-decoration: none;
+  }
+  
+  /* Estilos específicos para os ícones (usados no NavLinks) */
+  .nav__right svg {
+    fill: var(--white);
+    transition: 0.3s;
+  }
+  
+  .nav__right svg:hover {
+    fill: var(--primary-color);
+  }
